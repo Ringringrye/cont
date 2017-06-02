@@ -14,6 +14,13 @@ body {
     height: 100%
 }
 
+img{
+	padding-left: 100px;
+}
+
+p{
+	margin: 0;
+}
 
 h1,
 h2,
@@ -48,10 +55,15 @@ li {
     padding: 0;
 }
 
-
+.section-title{
+	padding-left: 20px;
+}
 
 
 /* Navigation Bar */
+#home{
+	z-index: 100;
+} 
 
 .header-top{
 	position: fixed;
@@ -66,6 +78,9 @@ li {
 	float: left;
 }
 
+.logo img{
+	padding-left: 0px;
+}
 
 .navigation-menu li{
 	display: block;
@@ -82,5 +97,45 @@ li {
 .navigation-menu .active{
 	background: #fff;
 }
-
 /* End Navigation Bar*/
+
+/* Subheading */
+.subheader{
+	position: fixed;
+	width: 100%;
+	left:0;
+	top: 40px;
+	height: 25px;
+	vertical-align: text-top;
+	background-color: #0e0340;
+}
+
+.subheader a{
+	font-size: 14px;
+	color: #fff;
+	float: right;
+	display: block;
+	margin-right: 10px;
+}
+/*End Subheading*/
+
+/* Section 1*/
+.section1-section{
+	top: 75px;
+	position: relative;
+	z-index: 200;
+}
+
+.section1-section img{
+
+}
+
+/* End Section 1 */
+
+.section2-section{
+	top: 75px;
+	position: relative;
+	z-index: 200;
+}
+
+
