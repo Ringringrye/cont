@@ -1,141 +1,174 @@
-/* TEMPLATE */
+/*Global Styles*/
 
-body {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 1px;
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
+body{
+
+	font-size: 12px;
+	font-weight: 400;
+	height: 100%;
+	font-family: sans-serif;
 }
 
-html,
-body {
-    height: 100%
-}
-
-img{
-	padding-left: 100px;
+a{
+	text-decoration: none;
 }
 
 p{
-	margin: 0;
+	font-weight: 500;
+	font-size: 14px;
+	margin-top: 5px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Poppins', sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-a {
-    color: #4c9cef;
-}
-
-a:hover,
-a:active,
-a:focus {
-    color: #000;
-    text-decoration: none;
-	outline: none;
-}
-
-
-ul,
-li {
+ul, 
+li{
 	list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
+/*End Global Styles*/
 
-.section-title{
-	padding-left: 20px;
-}
-
-
-/* Navigation Bar */
-#home{
-	z-index: 100;
-} 
-
-.header-top{
+div.header{
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 40px;
 	background-color: #dbdbdb;
+	height: 50px;
 }
 
-.logo{
+div.header-logo{
 	float: left;
 }
 
-.logo img{
-	padding-left: 0px;
+div.nav-menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding:0;
 }
 
-.navigation-menu li{
+div.nav-menu li a{
 	display: block;
 	float: right;
-	text-align: center;
-	text-decoration: none; 
+	line-height: 40px;
 	padding: 8px 16px;
+	text-transform: uppercase;
+	top: 0;
+	height: 50px;
+	color: #000;
+	font-weight: 500;
+	border-left: 1px solid #afc4d1;
 }
 
-.navigation-menu li:hover{
-	background: #fff;
-}
-
-.navigation-menu .active{
-	background: #fff;
-}
-/* End Navigation Bar*/
-
-/* Subheading */
-.subheader{
-	position: fixed;
-	width: 100%;
-	left:0;
-	top: 40px;
-	height: 25px;
-	vertical-align: text-top;
-	background-color: #0e0340;
-}
-
-.subheader a{
-	font-size: 14px;
+div.nav-menu li a:hover{
+	background-color: #000;
 	color: #fff;
-	float: right;
+}
+
+div.subheader{
+	position: fixed;
+	top: 50px;
+	width: 100%;
+	height: 25px;
+	background-color: #afc4d1;
+}
+
+div.date-time{
+	top: 0;
+	padding-right: 10px;
+	height: 25px;
 	display: block;
-	margin-right: 10px;
-}
-/*End Subheading*/
-
-/* Section 1*/
-.section1-section{
-	top: 75px;
-	position: relative;
-	z-index: 200;
+	float: right;
 }
 
-.section1-section img{
-
+div.file-name{
+	top: 0;
+	padding-left: 10px;
+	height: 25px;
+	display: block;
+	float: left;
 }
 
-/* End Section 1 */
 
-.section2-section{
-	top: 75px;
-	position: relative;
-	z-index: 200;
+div.content{
+	padding-top: 70px;
 }
+
+div.section{
+	padding-left: 15px;
+}
+
+img.indented{
+	margin-left: 0.3em;
+}
+
+table{ 
+	margin-left: 3em;
+    text-align: center;
+}
+    
+th
+{ 
+    text-align: center;
+    background-color: #4452ac;
+    color: #FFF;
+    padding: 0.4em;
+}      
+    
+td{ 
+    font-family: sans-serif; 
+    text-align: center;
+    background-color: #EEE;
+    color: #000;
+    padding: 0.4em;
+}
+
+
+#q-graph {display: block; /* fixes layout wonkiness in FF1.5 */
+  position: relative; width: 600px; height: 300px;
+  margin: 1.1em 0 0; padding: 0;
+  background: #dbdbdb;
+  border: 1px solid gray;
+  font: 12px sans-serif;
+}
+
+#q-graph caption {
+  caption-side: top; 
+  width: 600px;
+  position: 
+  relative; 
+  z-index: 10;
+  font-weight: bold;
+}
+
+#q-graph tr, #q-graph th, #q-graph td { 
+  position: absolute;
+  bottom: 0; width: 150px; z-index: 2;
+  margin: 0; padding: 0;
+  text-align: center;}
+  
+#q-graph thead tr {left: 100%; top: 50%; bottom: auto;
+  margin: -2.5em 0 0 5em;}
+#q-graph thead th {width: 7.5em; height: auto; padding: 0.5em 1em;}
+#q-graph thead th.sent {top: 0; left: 0; border: 1px solid;}
+#q-graph thead th.paid {top: 2.75em; left: 0; border: 1px solid;}
+
+#q-graph tbody tr {height: 296px; padding-top: 2px;
+  border-right: 1px dotted #C4C4C4; color: #AAA;}
+#q-graph #q1 {left: 0;}
+#q-graph #q2 {left: 150px;}
+#q-graph #q3 {left: 300px;}
+#q-graph #q4 {left: 450px; border-right: none;}
+#q-graph tbody th {top: 0.75em; vertical-align: top;}
+#q-graph .bar {width: 60px; border: 1px solid; border-bottom: none; color: #000;}
+#q-graph .bar p {margin: 5px 0 0; padding: 0;}
+#q-graph .sent {left: 13px; background: #DCA url(fade-dark.png) repeat-x;
+  border-color: #EDC #BA9 #000 #EDC;}
+#q-graph .paid {left: 77px; background: #9D9 url(fade-dark.png) repeat-x;
+  border-color: #CDC #9B9 #000 #BFB;}
+
+
+#ticks {position: relative; top: -300px; left: 2px;
+  width: 596px; height: 300px; z-index: 1;
+  margin-bottom: -300px;
+  font: 9px Helvetica, Geneva, sans-serif;}
+#ticks .tick {position: relative; border-bottom: 1px solid #BBB; width: 600px;}
+#ticks .tick p {position: absolute; left: 100%; top: -0.67em; margin: 0 0 0 0.5em;}
 
 
